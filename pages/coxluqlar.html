@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çoxluqlar | Riyazi Kəşf</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="container">
+                <div class="logo"><a href="../index.html">R·K</a></div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html#formulas">Bölmələr</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container page-container reveal">
+                <header class="page-header">
+                    <h1>Çoxluqlar Nəzəriyyəsi</h1>
+                    <p>Riyaziyyatın fundamental dillərindən biri olan çoxluqlar, obyektləri qruplaşdırmaq və onlar arasındakı əlaqələri anlamaq üçün universal bir vasitədir.</p>
+                </header>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Çoxluq Anlayışı və Onun Təsviri</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p><b>Çoxluq</b> – müəyyən obyektlərin və ya elementlərin təkrarlanmayan bir toplusudur. Məsələn, sinifdəki şagirdlər, rənglər və ya ədədlər bir çoxluq təşkil edə bilər.</p>
+                                <p>Çoxluqlar adətən böyük latın hərfləri ilə işarə olunur ($A, B, C, ...$), elementləri isə fiqurlu mötərizə `{}` daxilində göstərilir.</p>
+                                <p>Bir 'a' obyektinin A çoxluğuna aid olması $a \in A$ kimi, aid olmaması isə $a \notin A$ kimi yazılır.</p>
+                                <h4>Püf Nöqtələri:</h4>
+                                <ul>
+                                    <li><b>Sıra önəmli deyil:</b> $\{1, 2, 3\}$ çoxluğu ilə $\{3, 1, 2\}$ çoxluğu eynidir.</li>
+                                    <li><b>Elementlər təkrarlanmır:</b> $\{1, 2, 2, 3\}$ kimi yazılış qəbul olunmur, o, $\{1, 2, 3\}$ kimi başa düşülür.</li>
+                                </ul>
+                                <hr>
+                                <h4>Çoxluqların Təsvir Üsulları</h4>
+                                <p><b>1. Siyahı üsulu (Roster Method):</b> Çoxluğun bütün elementləri sadalanır.</p>
+                                <p><i>Nümunə:</i> $A = \{\text{alma, armud, heyva}\}$</p>
+                                <p><i>Nümunə:</i> $B = \{2, 4, 6, 8\}$</p>
+                                <p><b>2. Xarakteristik üsul (Set-Builder Notation):</b> Elementlərin ortaq xassəsi göstərilir.</p>
+                                <p><i>Nümunə:</i> $B = \{x \mid x \text{ ikiyə bölünən tək rəqəmli natural ədəddir}\}$</p>
+                                <p><b>3. Eyler-Venn diaqramları:</b> Çoxluqlar və onlar arasındakı əlaqələr qapalı əyrilər (adətən dairələr) vasitəsilə təsvir edilir. Bu, məsələləri vizuallaşdırmaq üçün çox əlverişlidir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Çoxluqların Növləri və Altçoxluq</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p><b>Boş çoxluq:</b> Heç bir elementi olmayan çoxluğa deyilir. $\emptyset$ və ya $\{\}$ kimi işarə olunur.</p>
+                                <p><b>Sonlu və Sonsuz Çoxluqlar:</b> Elementlərinin sayını natural ədədlə ifadə etmək mümkündürsə sonlu (məs, A={1,2,3}), mümkün deyilsə sonsuz çoxluqdur (məs, Natural ədədlər çoxluğu $N$).</p>
+                                <p><b>Universal Çoxluq (Evrensel Küme):</b> Verilmiş bir məsələnin kontekstində mümkün olan bütün elementləri özündə birləşdirən çoxluqdur və $U$ hərfi ilə işarə edilir.</p>
+                                <hr>
+                                <h4>Altçoxluq</h4>
+                                <p>Əgər $A$ çoxluğunun bütün elementləri eyni zamanda $B$ çoxluğunun da elementidirsə, $A$-ya $B$-nin <b>altçoxluğu</b> deyilir və $A \subseteq B$ kimi işarə olunur.</p>
+                                <p><i>Nümunə:</i> $A=\{1, 2\}$ və $B=\{1, 2, 3\}$ olarsa, $A \subseteq B$-dir.</p>
+                                <p><b>Xüsusi altçoxluq:</b> Əgər $A \subseteq B$ və $A \neq B$ olarsa, $A$-ya $B$-nin xüsusi altçoxluğu deyilir və $A \subset B$ kimi işarə olunur.</p>
+                                <h4>Altçoxluqlarla bağlı vacib qaydalar:</h4>
+                                <ul>
+                                    <li>Boş çoxluq ($\emptyset$) istənilən çoxluğun altçoxluğudur.</li>
+                                    <li>Hər bir çoxluq özünün altçoxluğudur ($A \subseteq A$).</li>
+                                    <li>Elementlərinin sayı $n$ olan bir çoxluğun **$2^n$** sayda altçoxluğu var.</li>
+                                    <li>Elementlərinin sayı $n$ olan bir çoxluğun **$2^n - 1$** sayda xüsusi altçoxluğu var.</li>
+                                </ul>
+                                <p><i>Nümunə: 3 elementi olan $A=\{a, b, c\}$ çoxluğunun $2^3 = 8$ sayda altçoxluğu var: $\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}$.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Çoxluqlar Üzərində Əməllər (Birləşmə və Kəsişmə)</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4>1. Çoxluqların Birləşməsi ($A \cup B$)</h4>
+                                <p>$A$ və $B$ çoxluqlarının bütün elementlərindən ibarət olan yeni çoxluğa onların birləşməsi deyilir. Məntiqi "və ya" (OR) kimi düşünülə bilər.</p>
+                                <p>$$A \cup B = \{x \mid x \in A \text{ və ya } x \in B\}$$</p>
+                                <p><i>Nümunə: $A=\{1, 2, 3\}$ və $B=\{3, 4, 5\}$ olarsa, $A \cup B = \{1, 2, 3, 4, 5\}$.</i></p>
+                                <hr>
+                                <h4>2. Çoxluqların Kəsişməsi ($A \cap B$)</h4>
+                                <p>Həm $A$, həm də $B$ çoxluğuna eyni zamanda daxil olan (yəni ortaq) elementlərdən ibarət olan çoxluğa onların kəsişməsi deyilir. Məntiqi "və" (AND) kimi düşünülə bilər.</p>
+                                <p>$$A \cap B = \{x \mid x \in A \text{ və } x \in B\}$$</p>
+                                <p><i>Nümunə: $A=\{1, 2, 3\}$ və $B=\{3, 4, 5\}$ olarsa, $A \cap B = \{3\}$.</i></p>
+                                <p><b>Püf nöqtəsi:</b> Əgər çoxluqların kəsişməsi boş çoxluqdursa ($A \cap B = \emptyset$), onlara <b>kəsişməyən çoxluqlar</b> deyilir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Çoxluqlar Üzərində Əməllər (Fərq və Simmetrik Fərq)</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4>3. Çoxluqların Fərqi ($A \setminus B$)</h4>
+                                <p>$A$ çoxluğunun $B$ çoxluğuna daxil olmayan elementlərindən ibarət olan çoxluğa $A$ və $B$ çoxluqlarının fərqi deyilir. "A-da olsun, amma B-də olmasın" deməkdir.</p>
+                                <p>$$A \setminus B = \{x \mid x \in A \text{ və } x \notin B\}$$</p>
+                                <p><i>Nümunə: $A=\{1, 2, 3\}$ və $B=\{3, 4, 5\}$ olarsa, $A \setminus B = \{1, 2\}$. Eyni zamanda, $B \setminus A = \{4, 5\}$.</i></p>
+                                <hr>
+                                <h4>4. Simmetrik Fərq ($A \Delta B$)</h4>
+                                <p>Yalnız $A$-ya və ya yalnız $B$-yə daxil olan elementlərdən ibarət çoxluğa simmetrik fərq deyilir. Başqa sözlə, birləşmədən kəsişmənin çıxılmasıdır.</p>
+                                <p>$$A \Delta B = (A \cup B) \setminus (A \cap B) = (A \setminus B) \cup (B \setminus A)$$</p>
+                                <p><i>Nümunə: $A=\{1, 2, 3\}$ və $B=\{3, 4, 5\}$ olarsa, $A \Delta B = \{1, 2, 4, 5\}$.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="accordion-item">
+                        <button class="accordion-header">Mühüm Xassələr və Element Sayı Düsturları</button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Çoxluğun elementlərinin sayı $n(A)$ kimi işarə olunur.</p>
+                                <h4>Element Sayı Düsturları (İçindən-Xaricdən Prinsipi)</h4>
+                                <ul>
+                                    <li>İki çoxluğun birləşməsi üçün:
+                                        $$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$</li>
+                                    <li>Üç çoxluğun birləşməsi üçün:
+                                        $$n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(A \cap C) - n(B \cap C) + n(A \cap B \cap C)$$</li>
+                                    <li>Fərq üçün:
+                                        $$n(A \setminus B) = n(A) - n(A \cap B)$$</li>
+                                    <li>Simmetrik fərq üçün:
+                                        $$n(A \Delta B) = n(A \cup B) - n(A \cap B) = n(A) + n(B) - 2 \cdot n(A \cap B)$$</li>
+                                </ul>
+                                <hr>
+                                <h4>Əməllərin Xassələri</h4>
+                                <ul>
+                                    <li><b>Yerdəyişmə (Kommutativlik):</b> $A \cup B = B \cup A$; &nbsp;&nbsp; $A \cap B = B \cap A$</li>
+                                    <li><b>Qruplaşdırma (Assosiativlik):</b> $(A \cup B) \cup C = A \cup (B \cup C)$</li>
+                                    <li><b>Paylanma (Distributivlik):</b> $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$ <br> $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$</li>
+                                </ul>
+                                <hr>
+                                <h4>De Morgan Qanunları</h4>
+                                <p>$A'$ - $A$ çoxluğunun $U$ universal çoxluğuna tamamlayıcısıdır ($A' = U \setminus A$).</p>
+                                <ul>
+                                    <li>$(A \cup B)' = A' \cap B'$</li>
+                                    <li>$(A \cap B)' = A' \cup B'$</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-header"><a href="../index.html" class="back-link">← Geri Qayıt</a></div>
+            </div>
+        </main>
+        <footer class="reveal">
+            <div class="container">
+                <p>abdullaxows ilə dizayn edildi © 2025</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']]
+        }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
